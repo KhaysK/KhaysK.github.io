@@ -9,21 +9,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <div class="logo">Андрей Браун</div>
-      <div class="menu">
-        <ul>
-          <li>Обо мне</li>
-          <li>Услуги</li>
-          <li>Кейсы</li>
-          <li>Прайс</li>
-          <li>Отзывы</li>
-          <li>Контакты</li>
-        </ul>
-      </div>
-    </header>
+      <nav>
+        <div class="logo">Андрей Браун</div>
+        <div class="menu">
+          <ul>
+            <li>Обо мне</li>
+            <li>Услуги</li>
+            <li>Кейсы</li>
+            <li>Прайс</li>
+            <li>Отзывы</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+      </nav>
+    </header> 
 
     <div class="main">
       <div class="title_container">
@@ -37,6 +41,7 @@
     <div class="about_me">
       <div class="title">
         <h2>Обо мне</h2>
+        <div class="underline"></div>
         <img src="materials/photo.png" alt="photo avatar" />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -50,56 +55,52 @@
           dolor facere veritatis non. Quibusdam quaerat accusantium pariatur at
           culpa amet sit tenetur itaque.
         </p>
-        <input type="submit" value="Скачать резюме" />
+        <div class="password">
+          <i class="fa fa-download icon"></i>
+          <input type="submit" value="Скачать резюме" />
+        </div>
       </div>
     </div>
 
     <div class="skills">
       <div class="skill_container">
         <h2>Что я умею</h2>
+        <div class="underline"></div>
         <ul>
           <li>
             <div class="skill">
               <img src="materials/laptop.png" alt="laptop icon" />
               <h3>Веб-дизайн</h3>
-              <span
-                >Lorem ipsum dolor sit amet consectetur<br />
+              <p>Lorem ipsum dolor sit amet consectetur<br />
                 adipisicing elit. Dolor quod animi,<br />
-                nostrum recusandae ea beatae.</span
-              >
+                nostrum recusandae beatae.</p>
             </div>
           </li>
           <li>
             <div class="skill">
               <img src="materials/slash_sign.png" alt="slash_sign icon" />
               <h3>Разработка</h3>
-              <span
-                >Lorem ipsum dolor sit amet consectetur<br />
+              <p>Lorem ipsum dolor sit amet consectetur<br />
                 adipisicing elit. Dolor quod animi,<br />
-                nostrum recusandae ea beatae.</span
-              >
+                nostrum.</p>
             </div>
           </li>
           <li>
             <div class="skill">
               <img src="materials/rocket.png" alt="rocket icon" />
               <h3>CEO-Оптимизация</h3>
-              <span
-                >Lorem ipsum dolor sit amet consectetur<br />
+              <p>Lorem ipsum dolor sit amet consectetur<br />
                 adipisicing elit. Dolor quod animi,<br />
-                nostrum recusandae ea beatae.</span
-              >
+                nostrum recusandae ea beatae.</p>
             </div>
           </li>
           <li>
             <div class="skill">
               <img src="materials/speaker.png" alt="speaker icon" />
               <h3>Маркетинг</h3>
-              <span
-                >Lorem ipsum dolor sit amet consectetur<br />
+              <p>Lorem ipsum dolor sit amet consectetur<br />
                 adipisicing elit. Dolor quod animi,<br />
-                nostrum recusandae ea beatae.</span
-              >
+                nostrum recusandae ea.</p>
             </div>
           </li>
         </ul>
@@ -109,6 +110,7 @@
     <div class="cases">
       <div class="case_container">
         <h2>Кейсы</h2>
+        <div class="underline"></div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
           deleniti ipsa, modi optio vero porro ea deserunt mollitia!
@@ -116,7 +118,7 @@
         <img src="materials/web_example.jpg" alt="example image" />
         <ul>
           <li>
-            <div class="description">
+            <div class="company">
               <h3>CLIENT:</h3>
               <p>Какая-то компания</p>
               <h3>WEBSITE:</h3>
@@ -151,7 +153,7 @@
           <option value="shop">Интернет магазин</option>
           <option value="news">Портал</option>
         </select>
-        <h3>ТИП САЙТА</h3>
+        <h3>ДИЗАЙН</h3>
         <select name="list" id="design">
           <option value="minimal">Минималистичный</option>
           <option value="classical">Классический</option>
@@ -159,26 +161,27 @@
           <option value="polygonal">Полигональный</option>
         </select>
         <h3>АДАПТИВНОСТЬ</h3>
-        <select name="list" id="design">
+        <select name="list" id="cross">
           <option value="computer">Компьютер</option>
           <option value="mobile">Мобильный</option>
           <option value="cross">Кроссплатформеный</option>
         </select>
-        <hr />
+        <div class="cross"></div>
         <p>Сроки 0</p>
-        <p>Стоимость 0</p>
+        <p id="second">Стоимость 0</p>
       </div>
     </div>
 
     <div class="statistics">
       <div class="stat_container">
         <h2>Немного статистики</h2>
+        <div class="underline"></div>
         <ul>
           <li>
             <div class="stat">
               <img src="materials/smile.png" alt="smile icon" />
               <h3>120</h3>
-              <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+              <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
             </div>
           </li>
           <li>
@@ -188,21 +191,21 @@
                 alt="slash_sign icon"
               />
               <h3>4,6000</h3>
-              <span>ЧАСОВ РАБОТЫ</span>
+              <p>ЧАСОВ РАБОТЫ</p>
             </div>
           </li>
           <li>
             <div class="stat">
               <img src="materials/mark.png" alt="check mark icon" />
               <h3>340</h3>
-              <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+              <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
             </div>
           </li>
           <li>
             <div class="stat">
               <img src="materials/award.png" alt="award icon" />
               <h3>23</h3>
-              <span>НАГРАД ПОЛУЧЕНО</span>
+              <p>НАГРАД ПОЛУЧЕНО</p>
             </div>
           </li>
         </ul>
@@ -212,6 +215,7 @@
     <div class="reviews">
       <div class="review_container">
         <h2>Отзывы</h2>
+        <div class="underline"></div>
         <img src="materials/review_logo.png" alt="photo avatar" />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
@@ -219,14 +223,14 @@
           dolor facere veritatis non. Quibusdam quaerat accusantium pariatur at
           culpa amet sit tenetur itaque.
         </p>
-        <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
-        <input type="submit" value="Скачать резюме" />
+        <p><b>Михаил</b>,Ген директор ПАО"Газпром".</p>
       </div>
     </div>
 
     <div class="contacts">
       <div class="contact_container">
-        <h2>МОИ КОНТАКТЫ</h2>
+        <h2>Мои Контакты</h2>
+        <div class="underline"></div>
         <div class="contacts_text">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
@@ -236,32 +240,34 @@
             <li>
               <div class="info">
                 <img src="materials/geopoint.png" alt="geolocation icon" />
-                <span>Санкт-Питербург<br />Невский проспект 11</span>
+                <p>Санкт-Питербург<br />Невский проспект 11</p>
               </div>
             </li>
             <li>
               <div class="info">
                 <img src="materials/mail.png" alt="mail icon" />
-                <span>info@companyname.com</span>
+                <p>info@companyname.com</p>
               </div>
             </li>
             <li>
               <div class="info">
                 <img src="materials/phone.png" alt="phone icon" />
-
-                <span>+79999999999</span>
+                <p>+79999999999</p>
               </div>
             </li>
           </ul>
         </div>
+
         <div class="form">
           <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
           <input type="text" name="name" placeholder="Имя" />
           <input type="text" name="email" placeholder="Email" />
-          <br />
-          <textarea name="message" id="1" cols="35" rows="10"></textarea>
-          <br />
-          <input type="submit" value="Отправить" />
+          <br/>
+          <textarea name="message" id="1" cols="35" rows="10" placeholder="Cообщение"></textarea>
+          <br/>
+          <div class="submit">
+            <input type="submit" value="Отправить"/>
+          </div>
           <ul>
             <li>
               <a href="https://www.facebook.com/"
@@ -294,10 +300,12 @@
       </div>
     </div>
 
-    <div class="map"></div>
+    <div class="map">
+      <input type="submit" value="I'm here"/>
+    </div>
 
     <footer>
-      <div>Copyright &#169; 2021 Андрей Браун. Designed by Web</div>
+      <div class="footer">Copyright &#169; 2021 Андрей Браун. Designed by Web</div>
     </footer>
   </body>
 </html>
