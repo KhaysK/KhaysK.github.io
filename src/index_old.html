@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name />
+    <meta name="description" content="Personal portfolio website" />
+    <title>Андрей Браун - Веб разработчик</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Андрей Браун</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">Прайс</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header> 
+
+    <section class="main">
+      <div class="title_container">
+        <h1>Привет<br />Я Андрей Браун</h1>
+        <h4>Фулл стек web-developer</h4>
+        <input type="submit" value="Обо мне" />
+        <input type="submit" value="Мои работы" />
+      </div>
+    </section>
+
+    <section class="about_me">
+      <div class="title">
+        <h2>Обо мне</h2>
+        <div class="underline"></div>
+        <img src="materials/photo.png" alt="photo avatar" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          voluptatem voluptas commodi provident rem explicabo quas<br />
+          dolor facere veritatis non. Quibusdam quaerat accusantium pariatur at
+          culpa amet sit tenetur itaque.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          voluptatem voluptas commodi provident rem explicabo quas<br />
+          dolor facere veritatis non. Quibusdam quaerat accusantium pariatur at
+          culpa amet sit tenetur itaque.
+        </p>
+        <div class="portfolio">
+          <i class="fa fa-download icon"></i>
+          <input type="submit" value="Скачать резюме" />
+        </div>
+      </div>  
+    </section>
+
+    <section class="skills">
+      <div class="skill_container">
+        <h2>Что я умею</h2>
+        <div class="underline"></div>
+        <ul>
+          <li>
+            <div class="skill">
+              <img src="materials/laptop.png" alt="laptop icon" />
+              <h3>Веб-дизайн</h3>
+              <p>Lorem ipsum dolor sit amet consectetur<br />
+                adipisicing elit. Dolor quod animi,<br />
+                nostrum recusandae beatae.</p>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="materials/slash_sign.png" alt="slash_sign icon" />
+              <h3>Разработка</h3>
+              <p>Lorem ipsum dolor sit amet consectetur<br />
+                adipisicing elit. Dolor quod animi,<br />
+                nostrum.</p>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="materials/rocket.png" alt="rocket icon" />
+              <h3>CEO-Оптимизация</h3>
+              <p>Lorem ipsum dolor sit amet consectetur<br />
+                adipisicing elit. Dolor quod animi,<br />
+                nostrum recusandae ea beatae.</p>
+            </div>
+          </li>
+          <li>
+            <div class="skill">
+              <img src="materials/speaker.png" alt="speaker icon" />
+              <h3>Маркетинг</h3>
+              <p>Lorem ipsum dolor sit amet consectetur<br />
+                adipisicing elit. Dolor quod animi,<br />
+                nostrum recusandae ea.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cases">
+      <div class="case_container">
+        <h2>Кейсы</h2>
+        <div class="underline"></div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+          deleniti ipsa, modi optio vero porro ea deserunt mollitia!
+        </p>
+        <img src="materials/web_example.jpg" alt="example image" />
+        <ul>
+          <li>
+            <div class="company">
+              <h3>CLIENT:</h3>
+              <p>Какая-то компания</p>
+              <h3>WEBSITE:</h3>
+              <p>http://www.somewebsite.com</p>
+              <input type="submit" value="VISIT LIVE SITE" />
+            </div>
+          </li>
+          <li>
+            <div class="description">
+              <h3>Название проекта</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda molestias ratione, incidunt maiores doloremque<br />
+                tenetur ex cum cupiditate corrupti illo eum quam ullam maxime
+                esse mollitia facere adipisci veritatis iusto? Omnis sed<br />
+                recusandae similique fugit necessitatibus inventore consequatur
+                distinctio dolor.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="calculator">
+      <div class="calc_container">
+        <h2>Расчет стоимости</h2>
+        <h3>ТИП САЙТА</h3>
+        <select name="list" id="type">
+          <option value="visit">Сайт визитка</option>
+          <option value="landing">Лендинг</option>
+          <option value="shop">Интернет магазин</option>
+          <option value="news">Портал</option>
+        </select>
+        <h3>ДИЗАЙН</h3>
+        <select name="list" id="design">
+          <option value="minimal">Минималистичный</option>
+          <option value="classical">Классический</option>
+          <option value="retro">Ретро</option>
+          <option value="polygonal">Полигональный</option>
+        </select>
+        <h3>АДАПТИВНОСТЬ</h3>
+        <select name="list" id="cross">
+          <option value="computer">Компьютер</option>
+          <option value="mobile">Мобильный</option>
+          <option value="cross">Кроссплатформеный</option>
+        </select>
+        <div class="cross"></div>
+        <p>Сроки 0</p>
+        <p id="second">Стоимость 0</p>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <div class="stat_container">
+        <h2>Немного статистики</h2>
+        <div class="underline"></div>
+        <ul>
+          <li>
+            <div class="stat">
+              <img src="materials/smile.png" alt="smile icon" />
+              <h3>120</h3>
+              <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+            </div>
+          </li>
+          <li>
+            <div class="stat">
+              <img
+                src="materials/slash_sign_orange.png"
+                alt="slash_sign icon"
+              />
+              <h3>4,6000</h3>
+              <p>ЧАСОВ РАБОТЫ</p>
+            </div>
+          </li>
+          <li>
+            <div class="stat">
+              <img src="materials/mark.png" alt="check mark icon" />
+              <h3>340</h3>
+              <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+            </div>
+          </li>
+          <li>
+            <div class="stat">
+              <img src="materials/award.png" alt="award icon" />
+              <h3>23</h3>
+              <p>НАГРАД ПОЛУЧЕНО</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="review_container">
+        <h2>Отзывы</h2>
+        <div class="underline"></div>
+        <img src="materials/review_logo.png" alt="photo avatar" />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          voluptatem voluptas commodi provident rem explicabo quas<br />
+          dolor facere veritatis non. Quibusdam quaerat accusantium pariatur at
+          culpa amet sit tenetur itaque.
+        </p>
+        <p><b>Михаил</b>,Ген директор ПАО"Газпром".</p>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contact_container">
+        <h2>Мои Контакты</h2>
+        <div class="underline"></div>
+        <div class="contacts_text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
+            reiciendis.
+          </p>
+          <ul>
+            <li>
+              <div class="info">
+                <img src="materials/geopoint.png" alt="geolocation icon" />
+                <p>Санкт-Питербург<br />Невский проспект 11</p>
+              </div>
+            </li>
+            <li>
+              <div class="info">
+                <img src="materials/mail.png" alt="mail icon" />
+                <p>info@companyname.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="info">
+                <img src="materials/phone.png" alt="phone icon" />
+                <p>+7 999 999-99-99</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form">
+          <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+          <input id="first" type="text" name="name" placeholder="Имя" />
+          <input type="text" name="email" placeholder="Email" />
+          <br/>
+          <textarea name="message" id="1" cols="35" rows="10" placeholder="Cообщение"></textarea>
+          <br/>
+          <div class="submit">
+            <input type="submit" value="Отправить"/>
+          </div>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/"><i class="fa fa-globe"></i></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="map">
+      <input type="submit" value="I'm here"/>
+    </div>
+
+    <footer>
+      <div class="footer">Copyright &#169; 2021 Андрей Браун. Designed by Web</div>
+    </footer>
+  </body>
+</html>
